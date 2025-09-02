@@ -16,28 +16,30 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <div class="header">
             <h1>TAŞ KAĞIT VE MAKAS</h1>
         </div>
+     
         <!-- card body -->
         <div class="choise-move">
+            <button class="nav-btn prev"><i class="fa-solid fa-angle-left"></i></button>
             <div class="slider-track">
                 <div class="invisible">
-                    <P>TAŞ</P>
+                    <P class="rps_choise">TAŞ</P>
                     <button class="option first active" onclick="fight('Rock')">
                         <img src="/rps-img/the-rock.png" alt=""></button>
 
                 </div>
 
                 <div class="invisible">
-                    <p>KAĞIT</p>
+                    <p class="rps_choise">KAĞIT</p>
                     <button class="option second" onclick="fight('Paper')">
                         <img src="./rps-img/thumbs_b_c_7267580c3354c3a5397fdec21a59b066.jpg" alt=""></button>
 
                 </div>
                 <div class="invisible">
-                    <p>MAKAS</p>
+                    <p class="rps_choise">MAKAS</p>
                     <button class="option third" onclick="fight('Scissors')">
                         <img src="/rps-img/3096358.jpg" alt="">
 
@@ -45,13 +47,9 @@
 
                 </div>
             </div>
-
-        </div>
-        <!-- left right navigation -->
-        <div class="lf-nav">
-            <button class="nav-btn prev"><i class="fa-solid fa-angle-left"></i></button>
             <button class="nav-btn next"><i class="fa-solid fa-angle-right"></i></button>
         </div>
+       
         <div class="result-area">
             <p class="showResult"></p>
             <button onclick="resetScore()" class="Reset">Skoru Sıfırla</button>
